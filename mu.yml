@@ -15,5 +15,7 @@ service:
       provider: GitHub
       repo: rjulian/bicyclist-service
     build: 
+    acceptance:
+      disabled: true
     production:
       environment: bicyclistprod
