@@ -1,0 +1,11 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo "do we really need to build?"
+
+artifacts:
+  files:
+    - '**/*'
+

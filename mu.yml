@@ -1,0 +1,19 @@
+namespace: metrics
+environments:
+  - name: bicyclistprod
+    cluster:
+      maxSize: 2
+
+service:
+  name: bicyclist
+  healthEndpoint: /health
+  port: 80
+  pathPatterns:
+    - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: rjulian/bicyclist-service
+    build: 
+    production:
+      environment: bicyclistprod
