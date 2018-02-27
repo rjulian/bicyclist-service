@@ -5,7 +5,7 @@ require 'aws-sdk-dynamodb'
 dynamo_client = Aws::DynamoDB::Client.new(region: 'us-east-1')
 
 get '/' do
-	'A microservice for counting bicyclists!'
+	'A microservice for counting bicyclists by counting them with a counter! Yaaay devops!'
 end
 
 get '/latest' do
